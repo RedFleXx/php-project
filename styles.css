@@ -1,0 +1,247 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #c21111;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ccc;
+}
+
+.language-selector {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.hero {
+    background-image: url('adapter-design-pattern.webp'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    animation: fadeInUp 2s;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    animation: fadeInUp 2s 0.5s;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    scroll-margin-top: 70px;
+    text-align: center;
+}
+
+.about-section {
+    background:#90e0ef;
+}
+
+.features-section {
+    background: #e0f7fa;
+}
+
+.applications-section {
+    background: #90e0ef;
+}
+
+.best-practices-section {
+    background: #00b4d8;
+}
+
+.creator-section {
+    background:#0077b6; /* Light purple */
+    padding: 20px;
+    text-align: center;
+}
+
+.creators {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure the boxes are beside each other */
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.creator-box {
+    flex: 1 1 45%;
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.creator-box:hover {
+    transform: scale(1.05);
+    background-color: #d1c4e9;
+}
+
+.creator-box img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.creator-info {
+    text-align: left;
+}
+
+.creator-info h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.creator-info p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+
+.section h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    font-size: 40px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature-box {
+    flex: 1 1 30%;
+    padding: 20px;
+    margin: 20px;
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
+    opacity: 0; /* Initially hidden */
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+.feature-box h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.feature-box p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.applications, .best-practices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.application-box, .practice-box {
+    flex: 1 1 45%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, opacity 0.3s;
+    opacity: 0; /* Initially hidden */
+}
+
+.application-box:hover, .practice-box:hover {
+    transform: scale(1.05);
+}
+
+.application-box:nth-child(1) {
+    background: #ffab91;
+}
+
+.application-box:nth-child(2) {
+    background: #80cbc4;
+}
+
+.application-box:nth-child(3) {
+    background: #ffcc80;
+}
+
+.application-box:nth-child(4) {
+    background: #aed581;
+}
+
+.application-box:nth-child(5) {
+    background: #90caf9;
+}
+
+.practice-box:nth-child(1) {
+    background: #ffab91;
+}
+
+.practice-box:nth-child(2) {
+    background: #80cbc4;
+}
+
+.practice-box:nth-child(3) {
+    background: #ffcc80;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
